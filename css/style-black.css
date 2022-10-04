@@ -2348,7 +2348,7 @@ border-radius: 20px;
 }
 .contacts-footer__list li:not(:first-child)::before {
   content: "";
-  background: #fff url(/img/footer/icons/email.svg) no-repeat center;
+  background: #fff url(../img/footer/icons/email.svg) no-repeat center;
   position: absolute;
   top: 0%;
   left: -15%;
