@@ -2102,7 +2102,7 @@ body {
 }
 .love-page {
   position: relative;
-  background: url(/img/page-12.love/Rectangle.svg);
+  background: url(../img/page-12.love/Rectangle.svg);
 }
 .love-page__container {
   display: flex;
