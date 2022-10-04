@@ -1,4 +1,5 @@
 "use strict"
+
 $(document).ready(function() {
 	$('.header__burger').click(function(event) {
 		$('.header__burger,.header__menu').toggleClass('active'); // добавляет класс при нажатии
@@ -42,10 +43,32 @@ ZoomImageArray(readImgActiveList); // зумим лист картинок но�
 let readImgActive_1 = document.querySelector('page-11__img-active-1');
 let readImgActive_2 = document.querySelector('page-11__img-active-2');
 let readImgActive_3 = document.querySelector('page-11__img-active-3');
-
+// 
 ChangeImgToImg(readImgList);
+// chenge theme
+ChangeTheme();
+// =
 
-function ChangeImgToImg(readImgList) {
+
+
+// functions
+function ZoomImage(elementImage) {  // увеличивает картинки при наведении, добавляет класс
+	elementImage.addEventListener('mouseover', function (event) {
+		elementImage.classList.add('big-photo-img');
+		elementImage.style.scale = 1.1;
+	});
+
+	elementImage.addEventListener('mouseout', function (event) {
+		elementImage.classList.remove('big-photo-img');
+		elementImage.style.scale = 1;
+	});
+}
+function ZoomImageArray(itemList) {   // увеличивает элементы массива картинок
+	for (let i = 0; i < itemList.length; i++) {
+		ZoomImage(itemList[i]);
+	}
+}
+function ChangeImgToImg(readImgList) {   // замена картинок при наведении
 	for (let i = 0; i < readImgList.length; i++) {
 		readImgList[i].addEventListener('mouseover', function (event) {
 			setTimeout(() => {
@@ -65,21 +88,24 @@ function ChangeImgToImg(readImgList) {
 	}
 
 }
-// functions
-function ZoomImage(elementImage) {  // увеличивает картинки при наведении, добавляет класс
-	elementImage.addEventListener('mouseover', function (event) {
-		elementImage.classList.add('big-photo-img');
-		elementImage.style.scale = 1.1;
-	});
+// change theme to black
+function ChangeTheme() {
 
-	elementImage.addEventListener('mouseout', function (event) {
-		elementImage.classList.remove('big-photo-img');
-		elementImage.style.scale = 1;
-	});
-}
+	let themeButtonTheme = document.querySelector('.themeButtonTheme');
 
-function ZoomImageArray(itemList) {   // увеличивает элементы массива картинок
-	for (let i = 0; i < itemList.length; i++) {
-		ZoomImage(itemList[i]);
-	}
+	themeButtonTheme.addEventListener('click', function (event) {
+		let theme = document.getElementById('theme');
+		if (theme.getAttribute('href') == "css/style.css") { 
+			theme.href = 'css/style-black.css';
+			themeButtonTheme.className = 'themeButtonBlackTheme';
+			themeButtonTheme.textContent = 'NightTheme';
+		} else {
+			theme.href = 'css/style.css';
+			themeButtonTheme.className = 'themeButtonTheme';
+			themeButtonTheme.textContent = 'DayMode';
+		}
+	})
 }
+// =
+
+
