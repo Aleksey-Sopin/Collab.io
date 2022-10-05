@@ -2100,7 +2100,7 @@ body {
 }
 .love-page {
   position: relative;
-  background: url(/img/page-12.love/Rectangle.svg);
+  background: url(../img/page-12.love/Rectangle.svg);
 }
 .love-page__container {
   display: flex;
@@ -2309,7 +2309,7 @@ body {
 }
 .contacts-footer__list li:not(:first-child)::before {
   content: "";
-  background: url(/img/footer/icons/email.svg) no-repeat center;
+  background: url(../img/footer/icons/email.svg) no-repeat center;
   position: absolute;
   top: 0%;
   left: -15%;
