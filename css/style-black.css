@@ -118,6 +118,7 @@ body {
 }
 
 .header {
+	position: relative;
   background: #7f8df4;
   height: 100%;
 }

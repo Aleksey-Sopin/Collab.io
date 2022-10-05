@@ -98,11 +98,11 @@ function ChangeTheme() {
 		if (theme.getAttribute('href') == "css/style.css") { 
 			theme.href = 'css/style-black.css';
 			themeButtonTheme.className = 'themeButtonBlackTheme';
-			themeButtonTheme.textContent = 'NightTheme';
+			themeButtonTheme.textContent = 'DayMode';
 		} else {
 			theme.href = 'css/style.css';
 			themeButtonTheme.className = 'themeButtonTheme';
-			themeButtonTheme.textContent = 'DayMode';
+			themeButtonTheme.textContent = 'NightTheme';
 		}
 	})
 }
