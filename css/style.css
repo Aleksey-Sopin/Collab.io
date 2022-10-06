@@ -1602,12 +1602,12 @@ body {
 
 .slider .slick-arrow.slick-prev {
   right: 0px;
-  background: url("../img/page-8.reviews/arrowLeft.svg") 0 0/100% no-repeat;
+  background: url("/img/page-8.reviews/arrowLeft.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: -40px;
-  background: url("../img/page-8.reviews/arrowRight.svg") 0 0/100% no-repeat;
+  background: url("/img/page-8.reviews/arrowRight.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-disabled {
