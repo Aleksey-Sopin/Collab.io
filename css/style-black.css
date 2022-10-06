@@ -1637,12 +1637,12 @@ border-radius: 20px;
 
 .slider .slick-arrow.slick-prev {
   right: 0px;
-  background: url("/img/page-8.reviews/arrowLeft-white.svg") 0 0/100% no-repeat;
+  background: url("../img/page-8.reviews/arrowLeft-white.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: -40px;
-  background: url("/img/page-8.reviews/arrowRight-white.svg") 0 0/100% no-repeat;
+  background: url("../img/page-8.reviews/arrowRight-white.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-disabled {

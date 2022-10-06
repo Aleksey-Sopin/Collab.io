@@ -84,6 +84,7 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   min-height: 100%;
   overflow: hidden;
   display: flex;
@@ -128,6 +129,9 @@ body {
   padding: 0px 15px;
 }
 .header__body {
+  background: #fff;
+  z-index: 100;
+  width: 100%;
   padding: 28px 0px;
   gap: 15px;
   display: flex;
@@ -1598,12 +1602,12 @@ body {
 
 .slider .slick-arrow.slick-prev {
   right: 0px;
-  background: url("/img/page-8.reviews/arrowLeft.svg") 0 0/100% no-repeat;
+  background: url("../img/page-8.reviews/arrowLeft.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: -40px;
-  background: url("/img/page-8.reviews/arrowRight.svg") 0 0/100% no-repeat;
+  background: url("../img/page-8.reviews/arrowRight.svg") 0 0/100% no-repeat;
 }
 
 .slider .slick-arrow.slick-disabled {
@@ -2100,7 +2104,7 @@ body {
 }
 .love-page {
   position: relative;
-  background: url(../img/page-12.love/Rectangle.svg);
+  background: url(/img/page-12.love/Rectangle.svg);
 }
 .love-page__container {
   display: flex;
@@ -2309,7 +2313,7 @@ body {
 }
 .contacts-footer__list li:not(:first-child)::before {
   content: "";
-  background: url(../img/footer/icons/email.svg) no-repeat center;
+  background: url(/img/footer/icons/email.svg) no-repeat center;
   position: absolute;
   top: 0%;
   left: -15%;
